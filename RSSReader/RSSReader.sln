@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSReader", "RSSReader\RSSReader.csproj", "{4E036815-B717-491F-8F91-869339E2147D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSReader", "RSSReader\RSSReader.csproj", "{4B8CC782-E9D1-4CD7-B7D4-C25A42180DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "ConsoleApp1\Validator.csproj", "{5051B521-F731-4755-8C42-FCFC0C5D78E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHandler", "DataHandler\DataHandler.csproj", "{7017AFB2-34AF-43F8-BC81-68F04DBF4163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataHandler", "dataHandler\dataHandler.csproj", "{6A747078-0D69-4F2E-B71F-B6922C32DEEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Validator.csproj", "{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E036815-B717-491F-8F91-869339E2147D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E036815-B717-491F-8F91-869339E2147D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E036815-B717-491F-8F91-869339E2147D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E036815-B717-491F-8F91-869339E2147D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5051B521-F731-4755-8C42-FCFC0C5D78E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5051B521-F731-4755-8C42-FCFC0C5D78E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5051B521-F731-4755-8C42-FCFC0C5D78E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5051B521-F731-4755-8C42-FCFC0C5D78E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A747078-0D69-4F2E-B71F-B6922C32DEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A747078-0D69-4F2E-B71F-B6922C32DEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A747078-0D69-4F2E-B71F-B6922C32DEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A747078-0D69-4F2E-B71F-B6922C32DEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8CC782-E9D1-4CD7-B7D4-C25A42180DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8CC782-E9D1-4CD7-B7D4-C25A42180DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8CC782-E9D1-4CD7-B7D4-C25A42180DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8CC782-E9D1-4CD7-B7D4-C25A42180DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7017AFB2-34AF-43F8-BC81-68F04DBF4163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7017AFB2-34AF-43F8-BC81-68F04DBF4163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7017AFB2-34AF-43F8-BC81-68F04DBF4163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7017AFB2-34AF-43F8-BC81-68F04DBF4163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9CC0471A-9178-4E2F-9FF0-0B62087DA8DB}
+		SolutionGuid = {C0CAC43B-44DB-4113-B17D-08FE1867C9E8}
 	EndGlobalSection
 EndGlobal

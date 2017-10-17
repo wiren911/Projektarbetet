@@ -1,6 +1,0 @@
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\obj\Debug\Validator.csproj.CoreCompileInputs.cache
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\bin\Debug\validator.exe.config
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\bin\Debug\validator.exe
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\bin\Debug\validator.pdb
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\obj\Debug\validator.exe
-C:\Users\david\source\repos\RSSReader\ConsoleApp1\obj\Debug\validator.pdb
