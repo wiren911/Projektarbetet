@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace RSSReader
 {
@@ -30,6 +31,11 @@ public partial class Form1 : Form
                 xmlRSS = client.DownloadString("http://bellobard.libsyn.com/rss");
             }
             
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
