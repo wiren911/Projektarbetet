@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHandler", "DataHandler\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Validator.csproj", "{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{4D51E6B5-C712-411A-BCC8-0A9E298A9880}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C68AAD-0B19-4F8A-8FA5-A7E13884FF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D51E6B5-C712-411A-BCC8-0A9E298A9880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D51E6B5-C712-411A-BCC8-0A9E298A9880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D51E6B5-C712-411A-BCC8-0A9E298A9880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D51E6B5-C712-411A-BCC8-0A9E298A9880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

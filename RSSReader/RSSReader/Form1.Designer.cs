@@ -33,7 +33,7 @@
             this.lstRSS = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RssUrl = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.RssUrl);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
@@ -98,13 +98,13 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "addList";
             // 
-            // textBox2
+            // RssUrl
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(39, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 26);
-            this.textBox2.TabIndex = 7;
+            this.RssUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RssUrl.Location = new System.Drawing.Point(39, 101);
+            this.RssUrl.Name = "RssUrl";
+            this.RssUrl.Size = new System.Drawing.Size(162, 26);
+            this.RssUrl.TabIndex = 7;
             // 
             // button6
             // 
@@ -298,7 +298,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RssUrl;
     }
 }
 
