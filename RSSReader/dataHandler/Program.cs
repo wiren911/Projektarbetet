@@ -8,12 +8,14 @@ using System.IO;
 
 namespace DataHandler
 {
-    class Program
+    public class Program
     {
        
 
+        //public void GetRssFeed()
         static void Main(string[] args)
         {
+            
                 var xml = "";
                 using (var client = new System.Net.WebClient())
                 {
@@ -26,11 +28,11 @@ namespace DataHandler
                 foreach(System.Xml.XmlNode item in dom.DocumentElement.SelectNodes("channel/item"))
                 {
                     var title = item.SelectSingleNode("title");
+                    
                     Console.WriteLine(title.InnerText);
                 }
             Console.ReadKey();
-        }
-        
+        }  
     }
   
 

@@ -33,6 +33,14 @@ public partial class Form1 : Form
             Console.ReadLine();
         }
 
-
+        private void seePods_Click(object sender, EventArgs e)
+        {
+            var UrlInput = GetRss.Text;
+             
+        }
+        static void Main(string [] args)
+        {
+            
+        }
     }
 }

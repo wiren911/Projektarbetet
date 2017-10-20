@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.RssUrl = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.seePods = new System.Windows.Forms.Button();
             this.btnGetXML = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -43,12 +43,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.GetRss = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.display = new System.Windows.Forms.ListBox();
+            this.displayInfo = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,11 +72,11 @@
             this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.display);
+            this.panel2.Controls.Add(this.displayInfo);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.RssUrl);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.seePods);
             this.panel2.Controls.Add(this.btnGetXML);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.closeButton);
@@ -119,16 +119,17 @@
             this.button6.Text = "Avsnitt";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // seePods
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(12, 208);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Program";
-            this.button5.UseVisualStyleBackColor = false;
+            this.seePods.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.seePods.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.seePods.Location = new System.Drawing.Point(12, 208);
+            this.seePods.Name = "seePods";
+            this.seePods.Size = new System.Drawing.Size(75, 23);
+            this.seePods.TabIndex = 5;
+            this.seePods.Text = "Program";
+            this.seePods.UseVisualStyleBackColor = false;
+            this.seePods.Click += new System.EventHandler(this.seePods_Click);
             // 
             // btnGetXML
             // 
@@ -191,7 +192,7 @@
             this.panel4.BackgroundImage = global::RSSReader.Properties.Resources.Orb_podcast_icon;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.GetRss);
             this.panel4.Location = new System.Drawing.Point(12, 57);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(192, 38);
@@ -210,13 +211,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // GetRss
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(30, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 26);
-            this.textBox1.TabIndex = 0;
+            this.GetRss.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GetRss.Location = new System.Drawing.Point(30, 3);
+            this.GetRss.Name = "GetRss";
+            this.GetRss.Size = new System.Drawing.Size(159, 26);
+            this.GetRss.TabIndex = 0;
             // 
             // panel3
             // 
@@ -259,15 +260,15 @@
             this.panel1.Size = new System.Drawing.Size(777, 164);
             this.panel1.TabIndex = 3;
             // 
-            // display
+            // displayInfo
             // 
-            this.display.AccessibleName = "display";
-            this.display.FormattingEnabled = true;
-            this.display.ItemHeight = 15;
-            this.display.Location = new System.Drawing.Point(136, 179);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(120, 94);
-            this.display.TabIndex = 9;
+            this.displayInfo.AccessibleName = "display";
+            this.displayInfo.FormattingEnabled = true;
+            this.displayInfo.ItemHeight = 15;
+            this.displayInfo.Location = new System.Drawing.Point(136, 179);
+            this.displayInfo.Name = "displayInfo";
+            this.displayInfo.Size = new System.Drawing.Size(120, 94);
+            this.displayInfo.TabIndex = 9;
             // 
             // Form1
             // 
@@ -299,19 +300,19 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox GetRss;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button seePods;
         private System.Windows.Forms.Button btnGetXML;
         private System.Windows.Forms.PictureBox pictureBox2;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox RssUrl;
-        private System.Windows.Forms.ListBox display;
+        private System.Windows.Forms.ListBox displayInfo;
     }
 }
 
