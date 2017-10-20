@@ -36,7 +36,7 @@
             this.RssUrl = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnGetXML = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.closeButton = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.display = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,11 +72,12 @@
             this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.display);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.RssUrl);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnGetXML);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.closeButton);
             this.panel2.Controls.Add(this.button1);
@@ -128,17 +130,17 @@
             this.button5.Text = "Program";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnGetXML
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(12, 179);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Hem";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnGetXML.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnGetXML.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGetXML.Location = new System.Drawing.Point(12, 179);
+            this.btnGetXML.Name = "btnGetXML";
+            this.btnGetXML.Size = new System.Drawing.Size(75, 23);
+            this.btnGetXML.TabIndex = 4;
+            this.btnGetXML.Text = "Hem";
+            this.btnGetXML.UseVisualStyleBackColor = false;
+            this.btnGetXML.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -257,6 +259,16 @@
             this.panel1.Size = new System.Drawing.Size(777, 164);
             this.panel1.TabIndex = 3;
             // 
+            // display
+            // 
+            this.display.AccessibleName = "display";
+            this.display.FormattingEnabled = true;
+            this.display.ItemHeight = 15;
+            this.display.Location = new System.Drawing.Point(136, 179);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(120, 94);
+            this.display.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,11 +306,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnGetXML;
         private System.Windows.Forms.PictureBox pictureBox2;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox RssUrl;
+        private System.Windows.Forms.ListBox display;
     }
 }
 
