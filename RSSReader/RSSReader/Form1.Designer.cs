@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lstRSS = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.dtextfild = new System.Windows.Forms.TextBox();
+            this.combtitle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -48,6 +52,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +76,11 @@
             this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.panel2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.linkLabel1);
+            this.panel2.Controls.Add(this.dtextfild);
+            this.panel2.Controls.Add(this.combtitle);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.button6);
@@ -85,14 +95,54 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(291, 446);
+            this.panel2.Size = new System.Drawing.Size(431, 446);
             this.panel2.TabIndex = 4;
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(330, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Load_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(281, 208);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(38, 15);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Gå till";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // dtextfild
+            // 
+            this.dtextfild.Location = new System.Drawing.Point(210, 74);
+            this.dtextfild.Name = "dtextfild";
+            this.dtextfild.Size = new System.Drawing.Size(195, 21);
+            this.dtextfild.TabIndex = 10;
+            this.dtextfild.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // combtitle
+            // 
+            this.combtitle.FormattingEnabled = true;
+            this.combtitle.Location = new System.Drawing.Point(284, 101);
+            this.combtitle.Name = "combtitle";
+            this.combtitle.Size = new System.Drawing.Size(121, 23);
+            this.combtitle.TabIndex = 9;
+            this.combtitle.SelectedIndexChanged += new System.EventHandler(this.CombTitle_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 130);
+            this.label1.Location = new System.Drawing.Point(104, 208);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 8;
@@ -101,10 +151,11 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(39, 101);
+            this.textBox2.Location = new System.Drawing.Point(108, 234);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 26);
+            this.textBox2.Size = new System.Drawing.Size(121, 26);
             this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button6
             // 
@@ -138,6 +189,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Hem";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.homebutton_Click);
             // 
             // button3
             // 
@@ -221,9 +273,9 @@
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.axWindowsMediaPlayer1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(291, 389);
+            this.panel3.Location = new System.Drawing.Point(431, 389);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(777, 57);
+            this.panel3.Size = new System.Drawing.Size(637, 57);
             this.panel3.TabIndex = 5;
             // 
             // pictureBox2
@@ -251,10 +303,19 @@
             this.panel1.BackgroundImage = global::RSSReader.Properties.Resources._2000px_Podcast_icon_svg;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(291, 0);
+            this.panel1.Location = new System.Drawing.Point(431, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(777, 164);
+            this.panel1.Size = new System.Drawing.Size(637, 164);
             this.panel1.TabIndex = 3;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(210, 134);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(195, 64);
+            this.listBox1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -298,6 +359,11 @@
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox combtitle;
+        private System.Windows.Forms.TextBox dtextfild;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
